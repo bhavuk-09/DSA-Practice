@@ -8,14 +8,13 @@ class Solution{
     public:
     int firstElementKTime(int a[], int n, int k)
     {
+        int arr[n];
      map<int,int> mp;
      for(int i=0;i<n;i++){
          mp[a[i]]++;
-     }
-     
-     for(int x: a){
-         if(mp[x]==k){
-             return k;
+         if(mp[a[i]]==k){
+         
+             return a[i];
          }
      }
      return -1;
