@@ -42,7 +42,7 @@ int main() {
     head= new Node();
     second=new Node();
     third=new Node();
-
+//...
     head->data=10;
     head->next=second;
     
