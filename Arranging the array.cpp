@@ -4,7 +4,7 @@ using namespace std;
 #define ll long long
 
 void Rearrange(int arr[], int n);
-
+//M
 int main() 
 { 
     int t;
