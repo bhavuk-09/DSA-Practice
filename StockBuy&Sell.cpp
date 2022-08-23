@@ -15,15 +15,18 @@ public:
         // code here
         int temp=0;
         vector<vector<int>> final_result;
-        // int i=0;
-        // while(i!=n-1){
-        //     int cur=i;
-        //     //vector<int> res;
-        //     while(A[i]<=A[i+1] and i<n){
-        //         i++;
-        //     }
-        //     final_result.push_back({cur,i});
-        //     if (i!=n-1) i++;
+//         int i=0;
+//         while(i!=n-1){                                       // Best approach to find maximum profitable indexes
+//             int cur=i;
+//             //vector<int> res;
+//             while(A[i]<=A[i+1] and i<n-1){
+//                 i++;
+//             }
+            
+//             if(cur != i) final_result.push_back({cur,i});
+//             if (i!=n-1) i++;
+            
+//         }
             
         // }
         int lastbuy=0;
