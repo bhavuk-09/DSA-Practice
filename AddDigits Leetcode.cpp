@@ -9,7 +9,6 @@ public:
                 temp=temp/10;
             }
             num=sum;
-            //cout<<sum<<";";
         }
         return num;
     }
