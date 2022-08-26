@@ -2,6 +2,8 @@ class Solution {
 public:
     
     bool isHappy(int n) {
+        vector<int> res;
+        res.push_back(n);
         bool r=true;
         if (n==1) return true;
         map<int,int> mp; 
@@ -15,10 +17,14 @@ public:
                 n/=10;
             }
             n=sum;
-            if(n==1){ 
-                r=true;
-                break;
+            if(n==1){ r=true; break;}
+            for(int i=0;i<res.size();i++){
+                if(res[i]==n) {
+                    r=false; 
+                    break;
+                }
             }
+            res.push_back(n);
         }
         return r;
     }
